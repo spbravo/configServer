@@ -44,7 +44,7 @@
         </dependencies>
     </dependencyManagement>
 
-    <!-- 5) Maven Plugin to build spring boot applications -->
+    <!-- 5) Maven Plugin to build spring boot applitions -->
     <build>
         <plugins>
             <plugin>
