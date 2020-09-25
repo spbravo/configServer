@@ -23,5 +23,5 @@ FROM openjdk:8-jdk-alpine
 COPY --from=0 configServer/target/configServer-0.0.1-SNAPSHOT.jar /ConfigServer.jar
 #WORKDIR /var/www/java  
 #RUN javac App.java  
-ENTRYPOINT ["java", "-cp", "ConfigServer.jar", "configServer.ApplicationConfigServer"]
+ENTRYPOINT ["java", "-cp", "ConfigServer.jar", "main.java.configServer.ApplicationConfigServer"]
 #CMD ["java", "-jar", "App.jar"]
