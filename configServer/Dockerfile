@@ -1,9 +1,9 @@
 #######Maven build stage##########
 FROM maven:3.6-jdk-11 as maven_build
-WORKDIR /pruebacontainer
+WORKDIR /configServer
 
 #copy pom
-COPY /pruebacontainer/pom.xml .
+COPY /configServer/pom.xml .
 
 #resolve maven dependencies
 #copy source
