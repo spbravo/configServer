@@ -11,6 +11,6 @@ spring:
         git:
           uri: https://github.com/migueldoctor/SpringCloudConfig-GitRepository
 
-  # Spring properties in case you use different profiles
+  # Spring updateando esto properties in case you use different profiles
   profiles:
     active: dev
