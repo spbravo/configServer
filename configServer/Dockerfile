@@ -10,7 +10,7 @@ COPY /configServer/pom.xml .
 COPY /configServer/src ./src
 
 # build the app (no dependency download here)
-RUN mvn clean package -x -Dmaven.test.skip
+RUN mvn clean package -X -Dmaven.test.skip
 
 # split the built app into multiple layers to improve layer rebuild
 #RUN mkdir -p target/docker-packaging && cd target/docker-packaging && jar -xf ../my-app*.jar
