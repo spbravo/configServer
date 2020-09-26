@@ -21,7 +21,6 @@ RUN mvn clean package -X -Dmaven.test.skip
 #FROM alpine:latest
 FROM openjdk:8-jdk-alpine
 COPY --from=0 /configServer/target/configServer-0.0.1-SNAPSHOT.jar /ApplicationConfigServer.jar
-#WORKDIR /var/www/java  
-#RUN javac App.java  
-ENTRYPOINT ["java", "-cp", "ApplicationConfigServer.jar", "ApplicationConfigServer"]
-#CMD ["java", "-jar", "App.jar"]
+#ENTRYPOINT ["java", "-cp", "ApplicationConfigServer.jar", "ApplicationConfigServer"]
+CMD ["java", "-cp", "ApplicationConfigServer.jar", "ApplicationConfigServer"]
+
