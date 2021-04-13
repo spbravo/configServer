@@ -31,4 +31,4 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: spbravo/gitops
-        tags: version1.1
+        tags: configServer1.0
